@@ -10,12 +10,9 @@ import skill6 from '../assets/image/icons8-tailwindcss-48.png'
 import skill7 from '../assets/image/react.png'
 import project2 from '../assets/image/project2.png'
 import project3 from '../assets/image/project3.png'
+import React from 'react'
 export const  services =[
-{
-    img:<img src={serv2}/>,
-    title:"DESIGN",
-    description:"I create responsive, user-friendly designs that prioritize both aesthetics and functionality using tools like Figma, Adobe XD, and Tailwind CSS.",
-},
+
 {
     img:<img src={serv3}/>,
     title:"DEVELOPMENT",

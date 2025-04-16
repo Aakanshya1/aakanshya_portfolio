@@ -5,8 +5,7 @@ import { projects } from '../constants/Constants'
 
 import { FaArrowRight } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import LiveProjects from './LiveProjects';
-import GitProject from './GitProject';
+
 function Projects() {
 
   return (
