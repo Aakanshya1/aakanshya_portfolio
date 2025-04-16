@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Monsieur+La+Doulaise&display=swap');
+  
+body{
+background-color: rgb(202, 202, 202);
+font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.typing-effect {
+    font-size: 5rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(45deg, #FF5733, #900C3F, #3D539F);
+    background-clip: text;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #3D539F;
+    width: 0;
+    animation: typing 3s steps(15) 1s forwards, blink 0.75s step-end infinite, zoomFade 3s ease-out, gradientMove 3s linear infinite;
+    font-family: "Corinthia", cursive;
+    font-weight: 700;
+    font-style: normal;
+   
+  }
+  
+  @keyframes zoomFade {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 15ch;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .diagonal{
+    clip-path: polygon(51% 0, 100% 0, 100% 100%, 39% 100%);
+    background: black;
+  }
+ 
+  .diagonal1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    clip-path: polygon(55% 0, 100% 0, 100% 100%, 40% 100%);
+  }
