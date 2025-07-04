@@ -61,16 +61,23 @@ font-family: "Open Sans", sans-serif;
     }
   }
   
-  .diagonal{
-    clip-path: polygon(51% 0, 100% 0, 100% 100%, 39% 100%);
-    background: black;
-  }
- 
+.diagonal1 {
+  /* default style for small screens — no diagonal */
+  clip-path: none;
+}
+
+@media (min-width: 1024px) {
   .diagonal1 {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    color: white;
-    clip-path: polygon(55% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
+}
+.diagonal2{
+clip-path: polygon(0 44%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+@media (min-width: 1024px) {
+  .diagonal2 {
+    clip-path: none;
+  }
+  
+}

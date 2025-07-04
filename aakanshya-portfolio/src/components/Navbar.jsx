@@ -28,7 +28,7 @@ function Navbar() {
         
 
         {/* Desktop Menu */}
-        <ul className=" hidden md:flex  flex-row w-full lg:w-[50%] justify-around pr-10 ">
+        <ul className=" hidden md:flex  flex-row w-full lg:w-[50%] justify-around items-center h-[50px]  ">
           {navItems}
         </ul>
       </div>
