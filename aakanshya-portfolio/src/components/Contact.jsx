@@ -46,7 +46,7 @@ function Contact() {
     <>
     <div className='flex flex-col gap-20 justify-center items-center w-full h-[1000px] lg:h-[1178px]  '> 
    
-          <div className='w-[50%]  gap-10 flex flex-col items-center text-center mt-15'>
+          <div className='w-[80%] lg:w-[50%]  gap-10 flex flex-col items-center text-center mt-15'>
           <div className='font-bold  text-[14px] lg:text-[30px] uppercase tracking-[0.5rem] border-8 lg:border-4 w-fit py-4 px-10 items-center monsterrant'>Contact </div>
                <p className='opensans text-[15px]'>Swing by for a cup of coffee, or leave us a message</p>
                <div className=''>
@@ -54,14 +54,14 @@ function Contact() {
                </div>
            </div>
     <div>
-    <form onSubmit={handleSubmit} className='flex flex-col gap-5 justify-center items-center monsterrant text-[14px]'>
+    <form onSubmit={handleSubmit} className='flex flex-col gap-5 justify-center items-center monsterrant text-[14px] '>
       <input
         type="text"
         placeholder="ENTER YOUR NAME"
         name="name"
         value={formData.name}
         onChange={handleChange}
-        className="monsterrant border-l-4 border-b-4 p-2 lg:w-[400px]"
+        className="monsterrant border-l-4 border-b-4 p-2  lg:w-[400px]"
       />
       <input
         type="email"

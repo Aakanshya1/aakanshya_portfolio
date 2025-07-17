@@ -2,7 +2,7 @@ import { useState } from 'react'
 import React from 'react'
 import project1 from '../assets/image/project1.png'
 import { projects } from '../constants/Constants'
-
+import { motion } from 'framer-motion'
 import { FaArrowRight } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
@@ -10,8 +10,13 @@ function Projects() {
 
   return (
   
-    <section className=' '>
-      <div className='relative'>
+    <section    className=' '>
+      <motion.div 
+       initial={{  opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{delay: 1, duration: 1 }}
+      viewport={{  amount: 0.3 }} 
+      className='relative'>
         <div className=' '>
           <img src={project1} className='h-[321px] w-[1000px] md:w-[900px] lg:w-[1920px] object-cover' alt="" />
         </div>
@@ -19,7 +24,7 @@ function Projects() {
         <div className='absolute top-0 left-0 h-full w-full flex flex-col justify-center items-center text-black'>
         <div className='font-bold  text-[14px] lg:text-[30px] uppercase tracking-[0.5rem] border-8 lg:border-4 w-fit py-4 px-10 items-center monsterrant'>Projects</div>
           </div>
-      </div>
+      </motion.div>
       <div className='bg-black opacity-[0.9] h-[50px]'></div>
       <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full '>
        {projects.map((project,index)=>(
