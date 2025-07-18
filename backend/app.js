@@ -29,23 +29,24 @@ const transporter = nodemailer.createTransport({
   });
 
   app.post('/contact', (req, res) => {
-    
+    const {name, email,phoneno, message}= req.body
     if (!name || !email || !phoneno || !message) {
       return res.status(400).json({ message: 'All fields are required.' });
     }
 
-    const mailOptions = {
-      from: email,
-      to: process.env.EMAIL, // Replace with your email where you want to receive messages
-      subject: `Contact Message from ${name}`,
-      text: `
-        Name: ${name}
-        Email: ${email}
-        Phone Number: ${phoneno}
-        Message: ${message}
-      `
-    };
-  
+const mailOptions = {
+  from: process.env.EMAIL,
+  replyTo: email,
+  to: "Aakanshya@vision-xtech.com",
+  subject: `Contact Message from ${name}`,
+ text: `
+    From: ${name} <${email}>
+    Phone: ${phoneno}
+    Message: ${message}
+  `
+};
+
+
 
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {

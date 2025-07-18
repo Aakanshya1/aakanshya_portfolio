@@ -10,7 +10,7 @@ function Skills() {
     initial={{ y: 100, opacity: 0 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
-    viewport={{ amount: 0.3 }}
+    viewport={{ amount: 0.3 , once:true}}
      className='font-bold flex text-center  text-[14px] lg:text-[30px] uppercase tracking-[0.5rem]  border-8 lg:border-4 w-fit py-4 px-10 items-center'>
       <p className=' justify-center items-center monsterrant'>Skills</p>
     </motion.div>
@@ -22,7 +22,7 @@ function Skills() {
   initial={{ y: 100, opacity: 0 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
-    viewport={{ amount: 0.3 }}
+    viewport={{ amount: 0.3, once:true }}
   className="flex flex-col lg:flex-row justify-center gap-20">
     {skills.slice(0, 4).map((serv, key) => (
       <div key={key} className="flex flex-col items-center gap-4">
@@ -37,7 +37,7 @@ function Skills() {
     initial={{ y: 100, opacity: 0 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
-    viewport={{ amount: 0.3 }}
+    viewport={{ amount: 0.3 ,once:true}}
     className="flex flex-col lg:flex-row justify-center gap-20"
   >
     {skills.slice(4).map((serv, key) => (
@@ -53,7 +53,7 @@ function Skills() {
     initial={{ y: 100, opacity: 0 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
-    viewport={{ amount: 0.3 }} className=' p-20'>
+    viewport={{ amount: 0.3, once:true }} className=' p-20'>
               <img src={img2} alt="" />
             </motion.div>
       </div>

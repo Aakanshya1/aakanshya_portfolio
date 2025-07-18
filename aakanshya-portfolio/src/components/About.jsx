@@ -11,9 +11,9 @@ function About() {
       initial={{ y: 100, opacity: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        viewport={{ amount: 0.3 }}
+        viewport={{ amount: 0.3 , once:true}}
         className=' w-[80%] lg:w-[50%]  gap-20 flex flex-col items-center text-center mt-15  '>
-      <div className='monsterrant font-bold text-[18px] lg:text-[30px] uppercase tracking-[0.2rem] lg:tracking-[0.5rem] border-8 lg:border-4 w-fit py-4 px-10 items-center'>About Me</div>
+      <div className='monsterrant font-bold text-[18px] lg:text-[30px] uppercase tracking-[0.2rem ] lg:tracking-[0.5rem] border-8 lg:border-4 w-fit py-4 px-10 items-center'>About Me</div>
       <p className='opensans text-justify ' >Hello! I'm a software developer passionate about building intuitive and responsive web applications. With a strong background in both front-end and back-end development, I specialize in React, Node.js, and integrating machine learning into projects. My approach is focused on delivering seamless user experiences while maintaining clean, efficient, and scalable code.
 
 I thrive on problem-solving and enjoy working on projects that challenge me to think creatively. I follow Agile methodologies to ensure timely, quality delivery and always strive to enhance my skills by exploring new technologies and best practices.
@@ -31,7 +31,7 @@ Feel free to explore my portfolio, and let's connect if you'd like to collaborat
  initial={{ y: 100, opacity: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }} 
-    viewport={{  amount: 0.3 }}
+    viewport={{  amount: 0.3 ,once:true}}
 className=" w-full flex flex-col h-100vh justify-center items-center">
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-[85%] lg:w-[70%] text-left place-items-center">
     {services.map((serv, key) => (

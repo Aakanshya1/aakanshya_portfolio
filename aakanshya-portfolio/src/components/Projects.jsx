@@ -15,7 +15,7 @@ function Projects() {
        initial={{  opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{delay: 1, duration: 1 }}
-      viewport={{  amount: 0.3 }} 
+      viewport={{  amount: 0.3 ,once:true}} 
       className='relative'>
         <div className=' '>
           <img src={project1} className='h-[321px] w-[1000px] md:w-[900px] lg:w-[1920px] object-cover' alt="" />
