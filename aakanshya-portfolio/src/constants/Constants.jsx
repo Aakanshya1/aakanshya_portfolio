@@ -85,7 +85,7 @@ export const projects = [
     {
         name:"Professional Portfolio",
         img:<img src={project2} className='h-[400px] w-[800px] object-cover'/>,
-        description:"Nature’s Window is a full-stack web application designed to bring users closer to the beauty and serenity of nature. Built using the MERN stack, the project offers a digital platform where users can explore nature-themed content, view scenic imagery, read about flora and fauna, and possibly share their own nature experiences.",
+        description:"Nature’s Window is a full-stack web application designed to bring users closer to the beauty and serenity of nature. Built using the MERN stack, the project shows professional nature experience.",
         link:"https://www.natureswindowbyswastik.com/",
         link2:"https://github.com/Aakanshya1/Nature-s_Window"
     },

@@ -52,7 +52,7 @@ function Projects() {
       <div className="p-5 text-white flex flex-col gap-3">
         <h2 className="text-xl font-bold">{project.name}</h2>
 
-        <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
+        <p className="text-gray-400 text-sm leading-relaxed ">
           {project.description}
         </p>
 
