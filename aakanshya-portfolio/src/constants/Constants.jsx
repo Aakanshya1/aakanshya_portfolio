@@ -97,17 +97,10 @@ export const projects = [
           link2:"https://github.com/Aakanshya1/Interior-design"
     },
     {
-        name:"Personal Portfolio",
-        img:<img src={project2} className='h-[400px] w-[800px] object-cover'/>,
-        description:"This is a personal portfolio website built using React and node to showcase my web development projects, skills, and background. Designed with a clean and modern aesthetic, the site emphasizes user experience, responsive design, and smooth animations to make browsing intuitive and engaging.",
-        link:"https://example.com/project3",
-        link2:"https://github.com/Aakanshya1/aakanshya_portfolio"
-    },
-    {
         name:"Library Management System",
         img:<img src={project4} className='h-[400px] w-[800px] object-cover'/>,
         description:"The Library Management System is a full-stack web application designed to streamline book management, user access, and resource allocation in a digital library environment. This project includes a robust role-based access control system with three distinct roles: User, Librarian, and Admin, each having specific privileges.",
-        link:"",
+        link:"https://mern-library-management-system.vercel.app/login",
         link2:"https://github.com/Aakanshya1/mern-library-management-system"
     }
    
