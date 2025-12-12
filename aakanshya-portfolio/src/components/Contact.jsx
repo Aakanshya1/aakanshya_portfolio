@@ -30,7 +30,7 @@ function Contact() {
     form.append('phoneno', formData.phoneno);
     form.append('message', formData.message);
     try {
-      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/contact`, form, {
+      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}contact`, form, {
         headers: {
           'Content-Type': 'application/json'
         },
