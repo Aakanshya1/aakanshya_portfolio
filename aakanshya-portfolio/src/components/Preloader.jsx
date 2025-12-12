@@ -14,7 +14,7 @@ const CircleShufflePreloader = ({ onComplete }) => {
       clearInterval(shuffleInterval);
       setLoading(false);
       onComplete();
-    }, 5000);
+    }, 2000);
 
     return () => {
       clearInterval(shuffleInterval);
