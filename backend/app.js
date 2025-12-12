@@ -37,7 +37,7 @@ const transporter = nodemailer.createTransport({
 const mailOptions = {
   from: process.env.EMAIL,
   replyTo: email,
-  to: "Aakanshya@vision-xtech.com",
+  to: "aakanshya.gyawali@gmail.com",
   subject: `Contact Message from ${name}`,
  text: `
     From: ${name} <${email}>
