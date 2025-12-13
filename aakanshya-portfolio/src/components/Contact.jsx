@@ -48,7 +48,7 @@ function Contact() {
    
           <div className='w-[80%] lg:w-[50%]  gap-10 flex flex-col items-center text-center mt-15'>
           <div className='font-bold  text-[14px] lg:text-[30px] uppercase tracking-[0.5rem] border-8 lg:border-4 w-fit py-4 px-10 items-center monsterrant'>Contact </div>
-               <p className='opensans text-[15px]'>Swing by for a cup of coffee, or leave us a message</p>
+               <p className='opensans text-[15px]'>Swing by for a cup of coffee, or leave me a message</p>
                <div className=''>
                  <img src={img2} alt="" />
                </div>

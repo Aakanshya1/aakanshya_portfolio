@@ -47,7 +47,7 @@ className=" w-full flex flex-col h-100vh justify-center items-center">
        
         <div className="p-6 flex flex-col gap-4 text-left">
           <p className=" font-bold tracking-wider monsterrant text-[22px]">{serv.title}</p>
-          <p className="text-[14px] opensans text-justify lg:text-left">{serv.description}</p>
+          <p className="text-[14px] opensans  lg:text-left">{serv.description}</p>
         </div>
       </div>
     ))}

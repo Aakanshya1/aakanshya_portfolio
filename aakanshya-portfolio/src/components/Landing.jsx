@@ -19,7 +19,7 @@ function Landing() {
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }} 
-             viewport={{ once:true, amount: 0.3 }}
+             viewport={{ once:false, amount: 0.3 }}
             className='flex flex-col mt-20 lg:mt-0 lg:gap-5 gap-2 justify-center font-bold text-white lg:text-black lg:p-0'>
               <p className="lg:text-4xl text-left">Hi, I am</p>
               <h1 className='lg:text-6xl text-3xl'>Aakanshya Gyawali</h1>
@@ -31,7 +31,7 @@ function Landing() {
               initial={{ y: 0, opacity: 0 }}
               whileInView={{ y: 10, opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
-               viewport={{ once:true, amount: 0.3 }}
+               viewport={{ once:false, amount: 0.3 }}
               className='flex lg:flex-row flex-col lg:gap-10 gap-6 text-2xl lg:text-4xl text-white lg:text-black mt-4 lg:mt-20'
             >
               <span className='lg:bg-gray-300 p-2 drop-shadow-lg rounded-full transition hover:scale-110'>
